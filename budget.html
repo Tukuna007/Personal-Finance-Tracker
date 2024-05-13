@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget Tracker</title>
+    <link rel="stylesheet" href="budgetstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Set Monthly Budgets</h1>
+        <form id="budgetForm">
+            <label for="month">Select Month:</label>
+            <select id="month" name="month" required>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                
+            </select>
+            <label for="diningOut">Dining Out Budget:</label>
+            <input type="number" id="diningOut" name="diningOut" min="0" step="0.01" required>
+            <label for="transportation">Transportation Budget:</label>
+            <input type="number" id="transportation" name="transportation" min="0" step="0.01" required>
+            <label for="clothing">Clothing Budget:</label>
+            <input type="number" id="clothing" name="clothing" min="0" step="0.01" required>
+            <button type="submit">Save Budgets</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="budgetscript.js"></script>
+</body>
+</html>
